@@ -1,81 +1,114 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
 body {
   margin: 0;
   padding: 0;
-  background: #f9f9fb;
+  background: #f4f7fa;
   color: #333;
   font-family: "Times New Roman", serif;
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
 .container {
-  max-width: 900px;
+  max-width: 960px;
   margin: auto;
   padding: 2rem;
 }
 
 header {
   text-align: center;
-  background-color: #004466;
+  background: linear-gradient(135deg, #003344, #005577);
   color: #fff;
-  padding: 2rem;
-  border-radius: 10px;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.2rem;
+  font-size: 2.8rem;
+  margin-bottom: 0.5rem;
 }
 
 .subtitle {
-  font-size: 1.2rem;
-  color: #d0eaff;
+  font-size: 1.3rem;
+  color: #e0f4ff;
   margin-bottom: 1rem;
 }
 
 .contact a {
+  color: #ccefff;
+  text-decoration: none;
+  margin: 0 0.3rem;
+  transition: color 0.3s ease;
+}
+
+.contact a:hover {
   color: #ffffff;
-  text-decoration: underline;
 }
 
 section {
   background: #ffffff;
-  margin: 2rem 0;
-  padding: 1.5rem;
+  margin: 2.5rem 0;
+  padding: 2rem;
   border-left: 5px solid #007acc;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-4px);
 }
 
 h2 {
   margin-top: 0;
   color: #007acc;
+  font-size: 1.5rem;
   border-bottom: 2px solid #eee;
-  padding-bottom: 0.3rem;
+  padding-bottom: 0.4rem;
 }
 
 .skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.6rem;
 }
 
 .skills span {
   background: #007acc;
   color: white;
-  padding: 0.4rem 0.8rem;
-  border-radius: 20px;
-  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.skills span:hover {
+  background: #005a99;
+  cursor: pointer;
 }
 
 .project {
-  margin-bottom: 1.2rem;
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  background: #fafcff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
 }
 
 footer {
   text-align: center;
-  padding: 1rem;
-  background-color: #004466;
+  padding: 1.5rem;
+  background-color: #003344;
   color: #fff;
-  margin-top: 2rem;
-  border-radius: 8px;
+  margin-top: 3rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
 }
